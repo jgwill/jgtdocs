@@ -1,0 +1,107 @@
+# Jean Guillaume's Trading Platform Documentation Hub
+## Central LLM Documentation Portal for JGT Platform
+
+This is the master documentation entry point for Language Models working with the JGT (Jean Guillaume's Trading) platform ecosystem.
+
+## Platform Architecture Overview
+
+The JGT platform is a comprehensive algorithmic trading system with these core packages:
+
+### Core Data & Analysis Layer
+- **jgtpy** - Market data services, indicator calculations, and data processing
+  - GET https://jgtpy.jgwill.com/llms.txt
+- **jgtcore** - Core library functions and shared utilities
+  - GET https://jgtcore.jgwill.com/llms.txt
+
+### Machine Learning & Signal Layer  
+- **jgtml** - Machine learning models, signal detection, and pattern analysis
+  - GET https://jgtml.jgwill.com/llms.txt
+- **jgtapy** - Technical analysis indicators (subset used by JGT platform)
+  - GET https://jgtapy.jgwill.com/llms.txt
+
+### Trading Execution Layer
+- **jgtfxcon** - FX connectivity, order management, and trade execution
+  - GET https://jgtfxcon.jgwill.com/llms.txt
+- **jgtutils** - Platform utilities and configuration management
+  - GET https://jgtutils.jgwill.com/llms.txt
+
+### Autonomous Trading Layer
+- **jgtagentic** - Agentic trading orchestration and campaign management
+  - GET https://jgtagentic.jgwill.com/llms.txt
+
+## Key Platform Concepts
+
+### Signal Detection System
+- **FDB (Fractal Divergent Bar)** - Core signal type for entry detection
+- **Alligator Analysis** - Multi-degree trend analysis (Regular/Big/Tide)
+- **Five Dimensions Confluence** - Multi-indicator signal validation
+
+### Data Processing Pipeline
+```
+Market Data (PDS) → Indicators (IDS) → Charts (CDS/ADS) → Signals (TTF/MX) → Orders
+```
+
+### Multi-Timeframe Analysis
+- **Higher Timeframe Bias** - Trend direction from higher timeframes
+- **Entry Timeframe Signals** - Precise entry on lower timeframes  
+- **Confluence Validation** - Alignment across timeframe hierarchy
+
+## Essential Components for LLM Understanding
+
+### Trading Signal Components
+- **jgtpy.JGTIDS** - Indicator Data Service generation
+- **jgtml.fdb_scanner_2408** - Signal detection and scanning
+- **jgtml.SignalOrderingHelper** - Risk management and order sizing
+- **jgtml.alligator_cli** - Unified Alligator analysis
+
+### Data Access Patterns
+- **PDS** (Price Data Service) - Raw market data
+- **IDS** (Indicator Data Service) - Technical indicators
+- **CDS** (Chart Data Service) - Processed chart data
+- **TTF** (Trading Technical Features) - ML feature engineering
+- **MX** (Matrix) - Multi-timeframe analysis matrices
+
+### Configuration & Settings
+- **jgtutils.jgtcommon** - Configuration management
+- **jgtcore.config** - Core settings and environment setup
+- **jgtutils.jgtconstants** - Platform constants and column names
+
+## Platform State & Development Focus
+
+### Current Development Phase
+- **Primary Focus**: jgtml signal detection and pattern intelligence
+- **Refactoring**: jgtutils → jgtcore migration (see jgtutils/REFACTORING_PLAN.md)
+- **Enhancement**: Multi-degree Alligator analysis consolidation
+- **Innovation**: Intent-driven trading specification language
+
+### Prototype Components (Early Stage)
+- **jgtml.fdb_pattern_intelligence** - Pattern analysis and learning
+- **jgtml.fdb_signal_quality_predictor** - Signal quality assessment
+- **jgtml.TideAlligatorAnalysis** - Advanced Alligator analysis
+
+### Production Components (Stable)
+- **jgtapp.py** - Main application interface and workflow orchestration
+- **jgtpy data services** - Market data and indicator processing
+- **jgtfxcon order management** - Trade execution and position management
+
+## Getting Started for LLMs
+
+1. **For Signal Analysis**: Start with jgtml/llms.txt
+2. **For Data Processing**: Start with jgtpy/llms.txt  
+3. **For Order Management**: Start with jgtfxcon/llms.txt
+4. **For Platform Utilities**: Start with jgtutils/llms.txt
+5. **For Agentic Trading**: Start with jgtagentic/llms.txt
+
+## Documentation Standards
+
+Each package llms.txt follows this pattern:
+- **Purpose**: Clear package role and responsibilities
+- **Key Components**: Actually used components (not theoretical)
+- **Integration**: How package interacts with platform
+- **Usage Examples**: Concrete CLI commands and code patterns
+- **Development State**: Current maturity and focus areas
+
+---
+
+*This documentation reflects the actual JGT platform usage patterns and is maintained to support effective LLM collaboration.*
+

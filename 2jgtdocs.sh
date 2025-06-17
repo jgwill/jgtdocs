@@ -22,9 +22,9 @@
 # see: https://github.com/jgwill/coaiapy/wiki for more details.
 
 #variable for the bridge
-base_key_name="Workspace.jgwill"
+base_key_name="Workspace.jgwill.jgtdocs:1"
 day_tag="$(tlid d)"
-bridge_subkey_name="jgtdocs"
+bridge_subkey_name="drop"
 topic_root="$1"
 ttl_default=4000 #90 minutes
 # Check if the topic_root argument is provided

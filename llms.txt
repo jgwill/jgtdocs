@@ -16,6 +16,8 @@ The JGT platform is a comprehensive algorithmic trading system with these core p
 ### Machine Learning & Signal Layer  
 - **jgtml** - Machine learning models, signal detection, and pattern analysis
   - GET https://jgtml.jgwill.com/llms.txt
+  - Current trading production guide (250617)
+  - GET https://jgtml.jgwill.com/PRODUCTION_TRADING_GUIDE.md
 - **jgtapy** - Technical analysis indicators (subset used by JGT platform)
   - GET https://jgtapy.jgwill.com/llms.txt
 

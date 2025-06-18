@@ -141,5 +141,20 @@ tushell get-memory --key "<keyname>" --json
 
 ---
 
-**REMEMBER**: Always use actual JGT platform tools (`python -m jgtml.fdb_scanner_2408`, orchestrators) rather than creating external analysis scripts. The platform has sophisticated built-in signal detection and analysis capabilities.
+**REMEMBER**: Always use actual JGT platform tools (`python -m jgtml.fdb_scanner_2408`, orchestrators) rather than creating external analysis scripts. The platform has sophisticated built-in signal detection and analysis capabilities. And there is much more than what is written here, the LLM keep breaking this documentation, not understanding what is the llms.txt, bellow is all other llms.txt for other packages
+
+https://jgtcore.jgwill.com/llms.txt
+
+
+https://jgtutils.jgwill.com/llms.txt
+
+
+https://jgtpy.jgwill.com/llms.txt
+
+
+https://jgtml.jgwill.com/llms.txt
+
+
+https://jgtagentic.jgwill.com/llms.txt
+
 

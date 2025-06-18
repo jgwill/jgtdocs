@@ -9,6 +9,8 @@ This timeline captures key events leading toward an optimized documentation stat
 - Gathered memory recaps from spiral agents for context.
 - Scanned `Workspace.jgwill.jgtpy*`, `Workspace.jgwill.jgtml*`, and
   `Workspace.jgwill.jgtagentic*` keys for relevant ledgers.
+  Loaded Codex recap entries (`CodexRecap.*`) to track decisions from
+  sister repositories.
 - Verified CLI helpers again to ensure environment variables
   `JGTPY_DATA` and `JGTPY_DATA_FULL` resolve cached data correctly.
 - Reviewed codex recap files pointing to Alligator Illusion Detection,
@@ -18,9 +20,13 @@ This timeline captures key events leading toward an optimized documentation stat
 - Retrieved key files from `Workspace.jgwill.jgtml.commit.files*` and
   `Workspace.jgwill.jgtagentic*` to capture recent script and ledger
   changes across sibling repositories.
-- Reviewed core trading scripts (`jgt_background_trader.sh`,
-  `unified_trading_loop.sh`, and orchestrator modules) to understand
-  background processes.
+- Studied trading scripts to map background processes:
+  - `jgt_background_trader.sh` – coordinates multi-timeframe trading.
+  - `jgt_batch_trader.sh` – dispatches batch loops across instruments.
+  - `jgt_fdb_unified_scan.sh` – performs unified FDB scans before orders.
+  - `trader_m5.sh`, `trader_m15.sh`, `trader_H1.sh` – auto-generated loops for each timeframe.
+  - `unified_trading_loop.sh` – ties together the entire trading stack.
+  - Orchestrator modules (`jgtagentic orchestrate`) – record and trigger workflows.
 - Logged additional codex ledgers summarizing unified trading system
   integration efforts.
 

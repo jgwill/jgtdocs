@@ -12,6 +12,9 @@ This map tracks repository evolution based on recent commit history.
 
 These commits depict the ongoing effort to refine analysis scripts and documentation. Recent work focuses on market analysis improvements and automation of data refresh.
 
+## Timeline Expansion (250618)
+Commit `bec9844` refined the documentation timeline with detailed subsections on trading scripts and orchestration modules. Memory recaps were loaded from sister repositories to contextualize each script's role in the unified trading stack.
+
 ## Documentation Upgrades (250618)
 Commit `2080440` introduced a new timeline under `bridge/250618` and logged a
 ledger capturing the intent to improve documentation workflows. This update also

@@ -14,6 +14,21 @@ This timeline captures key events leading toward an optimized documentation stat
 - Reviewed codex recap files pointing to Alligator Illusion Detection,
   market analysis, and trading platform activation ledgers.
 
+### Memory Integration
+- Retrieved key files from `Workspace.jgwill.jgtml.commit.files*` and
+  `Workspace.jgwill.jgtagentic*` to capture recent script and ledger
+  changes across sibling repositories.
+- Reviewed core trading scripts (`jgt_background_trader.sh`,
+  `unified_trading_loop.sh`, and orchestrator modules) to understand
+  background processes.
+- Logged additional codex ledgers summarizing unified trading system
+  integration efforts.
+
+### CLI Verification
+- Set `JGTPY_DATA` and `JGTPY_DATA_FULL` to cached paths under
+  `/workspace/jgtdocs/data` and validated `jgtcli`, `mxcli`, and
+  `jgtagentic` output to confirm toolchain stability.
+
 ## Next Steps
 - Evaluate existing ledgers under `book/_/ledgers` to extract relevant phases.
 - Draft narrative-map summarizing current repository commits.

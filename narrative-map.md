@@ -19,3 +19,10 @@ created an `AGENTS.md` guide for future contributors and expanded the
 `narrative-map` itself. CLI helpers were verified across jgtpy, jgtml, and
 jgtagentic despite environment restrictions, ensuring the platform remains
 operable for agents.
+
+## Memory Assimilation (250618)
+Commit `d8d2d34` expanded the documentation timeline with details on
+retrieving tushell memory keys from sibling repositories and verifying
+CLI helpers using cached data paths. AGENTS guidelines now instruct
+contributors to pull relevant memory keys and confirm tool output prior
+to documenting changes, ensuring cross-repo context is preserved.

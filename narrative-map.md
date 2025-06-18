@@ -11,3 +11,11 @@ This map tracks repository evolution based on recent commit history.
 359fe72 Refactor trading command script for improved readability by breaking long lines into multiple lines. This change enhances maintainability and clarity for executing various trading commands across instruments and timeframes in the JGTML application.
 
 These commits depict the ongoing effort to refine analysis scripts and documentation. Recent work focuses on market analysis improvements and automation of data refresh.
+
+## Documentation Upgrades (250618)
+Commit `2080440` introduced a new timeline under `bridge/250618` and logged a
+ledger capturing the intent to improve documentation workflows. This update also
+created an `AGENTS.md` guide for future contributors and expanded the
+`narrative-map` itself. CLI helpers were verified across jgtpy, jgtml, and
+jgtagentic despite environment restrictions, ensuring the platform remains
+operable for agents.

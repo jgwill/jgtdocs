@@ -3,4 +3,6 @@ description:
 globs: 
 alwaysApply: false
 ---
-This rule touches the importance to document the observations and current reality in relation to having a full working suite / platform or whatever of tools / app / services for trading efficiently.  Make sure we have our goal and observation in relation to that so we can know where secondary choice to create lies.
+This rule touches the importance to document the observations and current reality in relation to having a full working suite / platform or whatever of tools / app / services for trading efficiently.  Make sure we have our goal and observation in relation to that so we can know where secondary choice to create lies.  Make sure to find related issues in referenced repositories to make sure we know on what to work.
+
+Dont run "conda init bash"  what the fuck is that..... just run everything right in the environment where you are

@@ -1,109 +1,160 @@
-# Jean Guillaume's Trading Platform Documentation Hub
-## Central LLM Documentation Portal for JGT Platform
+# JGT Platform Documentation Hub for LLMs
 
-This is the master documentation entry point for Language Models working with the JGT (Jean Guillaume's Trading) platform ecosystem.
+## Platform Overview
 
-## Platform Architecture Overview
+This repository serves as the central documentation hub for Jean Guillaume's Trading (JGT) platform - a comprehensive algorithmic trading system designed for autonomous signal detection, multi-timeframe analysis, and intelligent trade execution.
 
-The JGT platform is a comprehensive algorithmic trading system with these core packages:
+**CRITICAL**: Use actual JGT platform components, not external tools. The platform has sophisticated built-in capabilities.
 
-### Core Data & Analysis Layer
-- **jgtpy** - Market data services, indicator calculations, and data processing
-  - GET https://jgtpy.jgwill.com/llms.txt
-- **jgtcore** - Core library functions and shared utilities
-  - GET https://jgtcore.jgwill.com/llms.txt
+## Core Platform Architecture
 
-### Machine Learning & Signal Layer  
-- **jgtml** - Machine learning models, signal detection, and pattern analysis
-  - GET https://jgtml.jgwill.com/llms.txt
-  - Current trading production guide (250617)
-  - GET https://jgtml.jgwill.com/PRODUCTION_TRADING_GUIDE.md
-- **jgtapy** - Technical analysis indicators (subset used by JGT platform)
-  - GET https://jgtapy.jgwill.com/llms.txt
+### 📊 Data & Analytics Layer
+- **jgtpy** - Market data services and core indicator calculations
+- **jgtcore** - Shared libraries and core functionality
 
-### Trading Execution Layer
-- **jgtfxcon** - FX connectivity, order management, and trade execution
-  - GET https://jgtfxcon.jgwill.com/llms.txt
-- **jgtutils** - Platform utilities and configuration management
-  - GET https://jgtutils.jgwill.com/llms.txt
+### 🤖 Machine Learning & Signal Detection  
+- **jgtml** - ML models, signal detection, and pattern intelligence
+- **jgtapy** - Technical analysis indicators
 
-### Autonomous Trading Layer
+### 🔗 Trading Execution & Connectivity
+- **jgtfxcon** - FX connectivity and order management
+- **jgtutils** - Platform utilities and configuration
+
+### 🧠 Autonomous Trading Intelligence
 - **jgtagentic** - Agentic trading orchestration and campaign management
-  - GET https://jgtagentic.jgwill.com/llms.txt
 
-## Key Platform Concepts
+## **LATEST: Unified Trading System (v0.0.336)**
 
-### Signal Detection System
-- **FDB (Fractal Divergent Bar)** - Core signal type for entry detection
-- **Alligator Analysis** - Multi-degree trend analysis (Regular/Big/Tide)
-- **Five Dimensions Confluence** - Multi-indicator signal validation
+### Trading Orchestrators
+- **`trading_orchestrator.py`** - Comprehensive trading system management with real-time scheduling
+- **`simple_trading_orchestrator.py`** - Streamlined orchestration for testing and single cycles
+- **`observation_processor.py`** - Natural language market analysis integration
 
-### Data Processing Pipeline
+### Enhanced Scripts & Tools
+- **`jgt_fdb_unified_scan.sh`** - Advanced market scanning with orchestrator integration
+- **`unified_trading_loop.sh`** - Centralized trading operations with test mode
+- **`jgt_background_trader.sh`** - Multi-timeframe background process management (m5, m15, H1)
+
+## **CORRECT COMMAND PATTERNS**
+
+### Market Data Pipeline
+```bash
+# Market Data (PDS) → Technical Indicators (IDS) → Chart Analysis (CDS)
+jgtapp refresh-pds -i INSTRUMENT -t TIMEFRAME
+jgtapp refresh-ids -i INSTRUMENT -t TIMEFRAME  
+jgtapp refresh-cds -i INSTRUMENT -t TIMEFRAME
 ```
-Market Data (PDS) → Indicators (IDS) → Charts (CDS/ADS) → Signals (TTF/MX) → Orders
+
+### **FDB Signal Detection (PRIMARY METHOD)**
+```bash
+# Correct FDB Scanner Usage
+python -m jgtml.fdb_scanner_2408 -i INSTRUMENT -t TIMEFRAME -demo
+
+# Enhanced FDB Scanner with Alligator Illusion Detection
+jgtml enhancedfdbscan -i INSTRUMENT -t TIMEFRAME -demo
 ```
 
-### Multi-Timeframe Analysis
-- **Higher Timeframe Bias** - Trend direction from higher timeframes
-- **Entry Timeframe Signals** - Precise entry on lower timeframes  
-- **Confluence Validation** - Alignment across timeframe hierarchy
+### Trading Orchestration
+```bash
+# Simple orchestrator for testing
+python -m jgtml.simple_trading_orchestrator --demo --test
 
-## Essential Components for LLM Understanding
+# Full orchestrator with scheduling
+python -m jgtml.trading_orchestrator --instruments SPX500,EUR-USD --timeframes H4,D1
+```
 
-### Trading Signal Components
-- **jgtpy.JGTIDS** - Indicator Data Service generation
-- **jgtml.fdb_scanner_2408** - Signal detection and scanning
-- **jgtml.SignalOrderingHelper** - Risk management and order sizing
-- **jgtml.alligator_cli** - Unified Alligator analysis
+## Signal Detection System
 
-### Data Access Patterns
-- **PDS** (Price Data Service) - Raw market data
-- **IDS** (Indicator Data Service) - Technical indicators
-- **CDS** (Chart Data Service) - Processed chart data
-- **TTF** (Trading Technical Features) - ML feature engineering
-- **MX** (Matrix) - Multi-timeframe analysis matrices
+### **FDB (Fractal Divergent Bar) Analysis**
+- **Zone Patterns**: S=Sell, B=Buy, N=Neutral
+- **Signal Types**: Entry signals, squat patterns, fade signals
+- **Multi-timeframe validation** across H4/D1 timeframes
 
-### Configuration & Settings
-- **jgtutils.jgtcommon** - Configuration management
-- **jgtcore.config** - Core settings and environment setup
-- **jgtutils.jgtconstants** - Platform constants and column names
+### **Current Market Analysis Capability**
+- **Alligator Illusion Detection** - Enhanced pattern recognition
+- **Five Dimensions Confluence** - Multi-indicator validation
+- **Background Processing** - Continuous multi-timeframe scanning
+- **Natural Language Analysis** - Observation processing for market context
 
-## Platform State & Development Focus
+## **AGENT PROTOCOLS**
 
-### Current Development Phase
-- **Primary Focus**: jgtml signal detection and pattern intelligence
-- **Refactoring**: jgtutils → jgtcore migration (see jgtutils/REFACTORING_PLAN.md)
-- **Enhancement**: Multi-degree Alligator analysis consolidation
-- **Innovation**: Intent-driven trading specification language
+### Memory Key Integration
+```bash
+# Retrieve cross-repository context before starting work
+tushell scan-keys --pattern 'Workspace.jgwill.jgtml*' -S
+tushell get-memory --key "<keyname>" --json
+```
 
-### Prototype Components (Early Stage)
-- **jgtml.fdb_pattern_intelligence** - Pattern analysis and learning
-- **jgtml.fdb_signal_quality_predictor** - Signal quality assessment
-- **jgtml.TideAlligatorAnalysis** - Advanced Alligator analysis
+### Documentation Standards
+- **Ledgers**: Create in `book/_/ledgers/` with timestamp format: `ledger_<topic>_<yyMMddHHmm>.md`
+- **Timeline Tracking**: Use `bridge/<date>/` for chronological documentation
+- **Narrative Mapping**: Update `narrative-map.md` with commit evolution
 
-### Production Components (Stable)
-- **jgtapp.py** - Main application interface and workflow orchestration
-- **jgtpy data services** - Market data and indicator processing
-- **jgtfxcon order management** - Trade execution and position management
+### **DO NOT CREATE EXTERNAL TOOLS**
+- ❌ **WRONG**: Custom analysis scripts (e.g., `market_analysis.py`)
+- ✅ **CORRECT**: Use FDB scanner and orchestrators: `python -m jgtml.fdb_scanner_2408`
 
-## Getting Started for LLMs
+## Supported Markets & Timeframes
 
-1. **For Signal Analysis**: Start with jgtml/llms.txt
-2. **For Data Processing**: Start with jgtpy/llms.txt  
-3. **For Order Management**: Start with jgtfxcon/llms.txt
-4. **For Platform Utilities**: Start with jgtutils/llms.txt
-5. **For Agentic Trading**: Start with jgtagentic/llms.txt
+### Markets
+- **Forex**: EUR-USD, AUD-USD, USD-CAD, XAU-USD
+- **Indices**: SPX500, AUS200  
+- **Commodities**: XAU-USD, precious metals
 
-## Documentation Standards
+### Timeframes
+- **Long-term**: M1 (Monthly), W1 (Weekly)
+- **Medium-term**: D1 (Daily), H4, H8
+- **Short-term**: H1, H2, H3
+- **Intraday**: m15, m5, m1
 
-Each package llms.txt follows this pattern:
-- **Purpose**: Clear package role and responsibilities
-- **Key Components**: Actually used components (not theoretical)
-- **Integration**: How package interacts with platform
-- **Usage Examples**: Concrete CLI commands and code patterns
-- **Development State**: Current maturity and focus areas
+## Current Development State
+
+### **Production Ready**
+- FDB signal detection system
+- Multi-timeframe analysis
+- Trading orchestration with scheduling
+- Background process management
+
+### **Active Development**  
+- Pattern intelligence and signal quality prediction
+- Campaign orchestration integration
+- Enhanced natural language market analysis
+
+### **Known Issues**
+- CLI argument conflicts (resolved in latest versions)
+- Environment setup requirements for `python-dateutil`
+- JSON signal output formatting (signals detected but file formatting issues)
+
+## **Platform Benefits**
+
+### For Automated Trading
+- **Systematic Signal Detection** - No manual chart analysis required
+- **Multi-Market Coverage** - Simultaneous instrument analysis  
+- **Risk Management** - Built-in position sizing and stop loss logic
+- **Continuous Operation** - Background scanning and execution
+
+### For Developers/Agents
+- **Modular Architecture** - Clear component separation
+- **Extensible Framework** - Add new indicators and signal types
+- **Memory Integration** - Cross-repository context preservation
+- **Complete Testing** - Demo modes and test capabilities
 
 ---
 
-*This documentation reflects the actual JGT platform usage patterns and is maintained to support effective LLM collaboration.*
+**REMEMBER**: Always use actual JGT platform tools (`python -m jgtml.fdb_scanner_2408`, orchestrators) rather than creating external analysis scripts. The platform has sophisticated built-in signal detection and analysis capabilities. And there is much more than what is written here, the LLM keep breaking this documentation, not understanding what is the llms.txt, bellow is all other llms.txt for other packages
+
+https://jgtcore.jgwill.com/llms.txt
+
+
+https://jgtutils.jgwill.com/llms.txt
+
+
+https://jgtpy.jgwill.com/llms.txt
+
+
+https://jgtml.jgwill.com/llms.txt
+
+
+https://jgtagentic.jgwill.com/llms.txt
+
 

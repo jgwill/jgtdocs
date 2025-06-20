@@ -16,19 +16,13 @@ These commits depict the ongoing effort to refine analysis scripts and documenta
 Commit `bec9844` refined the documentation timeline with detailed subsections on trading scripts and orchestration modules. Memory recaps were loaded from sister repositories to contextualize each script's role in the unified trading stack.
 
 ## Documentation Upgrades (250618)
-Commit `2080440` introduced a new timeline under `bridge/250618` and logged a
-ledger capturing the intent to improve documentation workflows. This update also
-created an `AGENTS.md` guide for future contributors and expanded the
-`narrative-map` itself. CLI helpers were verified across jgtpy, jgtml, and
-jgtagentic despite environment restrictions, ensuring the platform remains
-operable for agents.
+Commit `2080440` introduced a new timeline under `bridge/250618` and logged a ledger capturing the intent to improve documentation workflows. This update also created an `AGENTS.md` guide for future contributors and expanded the `narrative-map` itself. CLI helpers were verified across jgtpy, jgtml, and jgtagentic despite environment restrictions, ensuring the platform remains operable for agents.
 
 ## Memory Assimilation (250618)
-Commit `d8d2d34` expanded the documentation timeline with details on
-retrieving tushell memory keys from sibling repositories and verifying
-CLI helpers using cached data paths. AGENTS guidelines now instruct
-contributors to pull relevant memory keys and confirm tool output prior
-to documenting changes, ensuring cross-repo context is preserved.
+Commit `d8d2d34` expanded the documentation timeline with details on retrieving tushell memory keys from sibling repositories and verifying CLI helpers using cached data paths. AGENTS guidelines now instruct contributors to pull relevant memory keys and confirm tool output prior to documenting changes, ensuring cross-repo context is preserved.
 
 ## Data Exploration and LLMS Update (250619)
 Commit `18079c1` incorporated timeline refinements detailing trading script workflows. New instructions advise referencing `llms.txt` from main for official package links. Current update explores `data/current` and `data/full` with CLI tools, confirming offline data availability. AGENTS guidelines emphasize checking these resources before documentation.
+
+## Merge with Main (250620)
+Resolved conflicts while merging main branch, bringing in a new agent coordination ledger. Timeline updated to reflect dataset exploration and obsolete script removal.

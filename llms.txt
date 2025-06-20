@@ -1,5 +1,15 @@
 # JGT Platform Documentation Hub for LLMs
 
+## JG's NOTES
+
+* This LLMS.txt done by the LLM has regressed and is unacceptable, does not provide adequate navigation to various package like it was intended todo.  Each time we ask for changes in this llms.txt, it regressed there.   So this is just a note to ALL LLM reading this, you suck at it !!
+
+
+
+
+
+
+
 ## Platform Overview
 
 This repository serves as the central documentation hub for Jean Guillaume's Trading (JGT) platform - a comprehensive algorithmic trading system designed for autonomous signal detection, multi-timeframe analysis, and intelligent trade execution.

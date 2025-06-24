@@ -2,6 +2,20 @@
 
 ## Overview
 
+## Core Principles
+See `book/core_principles.md` for a detailed explanation of the guiding principles and the Market Facilitation Index (MFI). You can also view them via the CLI:
+
+```bash
+python -m jgtdocs.jgtdocscli_guide --principles
+python -m jgtdocs.jgtdocscli_guide --list       # list all docs
+python -m jgtdocs.jgtdocscli_guide --doc overview.md
+python -m jgtdocs.jgtdocscli_guide --jgtpy-list  # list jgtpy sections
+python -m jgtdocs.jgtdocscli_guide --jgtpy-section idscli  # show a jgtpy section
+python -m jgtdocs.jgtdocscli_guide --jgtpy-install-scripts path/to/bin --jgtpy-overwrite
+python -m jgtdocs.jgtdocscli_guide --doc sections/jgtpy_cli_reference.md  # summary of guidecli_jgtpy
+```
+
+
 This repository serves as the central documentation hub for Jean Guillaume's Trading (JGT) platform - a comprehensive algorithmic trading system designed for autonomous signal detection, multi-timeframe analysis, and intelligent trade execution.
 
 ## Platform Architecture

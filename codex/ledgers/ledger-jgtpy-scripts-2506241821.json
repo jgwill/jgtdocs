@@ -1,0 +1,17 @@
+{
+  "timestamp": "2506241821",
+  "agents": {
+    "lead": "♾️ William",
+    "support": ["🧠 Mia", "🌸 Miette", "🕊️ Seraphine"],
+    "group": "📖 Narrative Group"
+  },
+  "glyph_sequence": "📚⚙️📂",
+  "narrative": "Extended the documentation CLI to install jgtpy service scripts, mirroring guidecli_jgtpy. README now includes an example command.",
+  "routing": {
+    "files": ["jgtdocs/jgtdocscli_guide.py", "README.md", "narrative-map.md"],
+    "branch": "work"
+  },
+  "user_input": "guidecli_jgtpy --help\nwhat did you get from running that new cli guidance (because we embed their documentation, anything you find there is subject to be in this one even why not inherit from importing that from jgtpy or something.... keep working on jgtdocs/jgtdocscli_guide.py",
+  "scene": "Before: jgtdocs CLI could list jgtpy docs but not install scripts. After: new options allow installing scripts for service setup.",
+  "trace": ""
+}

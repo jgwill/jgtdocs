@@ -29,3 +29,28 @@ retrieving tushell memory keys from sibling repositories and verifying
 CLI helpers using cached data paths. AGENTS guidelines now instruct
 contributors to pull relevant memory keys and confirm tool output prior
 to documenting changes, ensuring cross-repo context is preserved.
+
+## CLI Documentation Expansion (250621)
+Commit `c5089fe` introduced a new CLI utility and `core_principles.md` to centralize platform philosophy. A corresponding ledger (`d5884fc`) tracks the emotional context and verification of jgtcli, mxcli, and jgtagentic usage output. This commit sets the groundwork for a unified documentation hub accessible from the command line.
+
+## MFI Documentation (250621)
+Commit `d29a5df` expanded the core principles guide with a comprehensive Market Facilitation Index section. The ledger (`ledger-mfi-doc-2506212216.json`) records motivation to unify indicator documentation and references CLI accessibility.
+
+## CLI Guide Refinement (250623)
+Commit `a85e107` introduced the CLI guide and MFI documentation. A minor follow-up removes an unused import from `jgtdocscli_guide.py` to keep the tool minimal.
+
+
+## Documentation Structure Upgrade (250624)
+Commit e6d1cb3 introduces new `overview` and `sections` documentation with an expanded CLI guide to list and display any file. This mirrors the `guidecli_jgtpy` interface for a consistent experience across the platform.
+
+## jgtpy Integration (250624)
+Commit e6d1cb3 adds optional jgtpy documentation access in `jgtdocscli_guide.py` and updates the README with example commands. The CLI can now show jgtpy sections and scripts directly, promoting a unified doc hub.
+
+## jgtpy Script Installation (250624)
+Commit e6d1cb3 adds the ability to install jgtpy service scripts through `jgtdocscli_guide.py`. A ledger records the intent to mirror `guidecli_jgtpy` features for consistency.
+
+## jgtpy CLI Reference (250624)
+Commit e6d1cb3 introduces a concise `jgtpy_cli_reference` section summarizing available `guidecli_jgtpy` documentation. README now points to this reference for unified access.
+
+## Dependency Docs and Info Requests (250624)
+Commit 771f3a3 adds `dependencies.md` summarizing requirements and an `info_request.md` file for open questions. The CLI gains `--deps` and `--info-request` options with README examples, expanding the documentation hub.
